@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+:root {
+  --primary: #1d1d1d;
+  --secondary: #f0f2d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: max(100vw / 1920 * 10);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero_media {
+    position: fixed !important;
+    z-index: -1;
+    pointer-events: none;
+}
+.hero_wrapper {
+  width: inherit;
+  height: inherit;
+}
+
+.hero_figure {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_row {
+  font-size: 25vh;
+  height: 33vh;
+}
+
+.hero_row_text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: inherit;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero_row_text h1 {
+    font-size: inherit;
+    line-height: 1;
+}
+
+.hero_row_text h4 {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+
+.hero_row_separator {
+  border: 1px solid var(--secondary);
+}
